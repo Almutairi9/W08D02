@@ -6,6 +6,7 @@ const role = new mongoose.Schema({
   },
   Permissions: {
     type: Array,
+    required: true,
   },
 });
 module.exports = mongoose.model("Role", role);
